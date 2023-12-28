@@ -1,0 +1,5 @@
+paddleocr~=2.6; sys_platform=="darwin"
+paddleocr~=2.7; sys_platform=="linux"
+paddlepaddle~=2.6
+flask>=1.1
+PyMuPDF>=1.21.0; sys_platform=="darwin"
