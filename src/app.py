@@ -7,7 +7,7 @@ from router import register_router
 
 import logging
 
-logger = logging.getLogger('werkzeug')
+logger = logging.getLogger(__name__)
 
 UPLOAD_FOLDER = 'static/uploads/'
 

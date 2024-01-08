@@ -16,7 +16,7 @@ class PaddleOCRHanler:
 
         res = self.paddle_ocr.ocr(img)
         return res
-
+    
     def get_ocr_text(self, img_b64: str):
         res = self.ocr_image(img_b64)
         return self._format_ocr_result(res)

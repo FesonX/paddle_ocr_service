@@ -54,10 +54,11 @@ def upload_image():
         flash("No file part")
         return redirect(request.url)
     file = request.files["file"]
+    
     if file.filename == "":
         flash("No image selected for uploading")
         return redirect(request.url)
-    print(file.filename)
+    
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(current_app.config["UPLOAD_FOLDER"], filename))
